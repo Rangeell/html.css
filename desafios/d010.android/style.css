@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/* Importando a fonte Roboto e Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Importando a fonte Android */
+@font-face {
+    font-family: "Android";
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Estilos para o corpo da página */
+body {
+    background-color: #84E1AD;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Estilos para o cabeçalho */
+header#principal {
+    background: linear-gradient(to bottom, rgba(87, 199, 133, 1) 0%, rgba(26, 92, 56, 1) 100%);
+    padding-bottom: 7px;
+    /* Precisei usar o padding-bottom para criar um espaçamento entre os links e o conteúdo abaixo */
+    box-shadow: 2px 0px 16px 4px #000000ad;
+}
+
+header h1 {
+    /* h1 é filho do header, não precisa de classe */
+    color: white;
+    font-family: "Bebas Neue", cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.33);
+    padding-top: 18px;
+    /* Precisei usar o padding-top para criar um espaçamento entre o título e o conteúdo acima */
+}
+
+header p {
+    /* p é filho do header, não precisa de classe */
+    color: white;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgb(0 0 0 / 75%);
+    margin: 24px auto 30px;
+    /* Margin para espaçamento entre o parágrafo, o Título acima e os links abaixo */
+}
+
+a.menu {
+    text-decoration: none;
+    color: #53d288;
+    font-weight: 600;
+    font-size: 1em;
+    margin: auto 5px;
+    /* Margin para espaçamento entre os links e a borda lateral esquerda */
+    padding: 5px 18px;
+    /* Padding para espaçamento da border (direito-esquerdo e topo-fundo)*/
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+a.menu:hover {
+    background-color: #57c786d2;
+    color: #1C5F3A;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    /* Usei % para definir a largura porque é mais flexível em diferentes tamanhos de tela. Melhorando a responsividade */
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+h1 {
+    font-family: Android, sans-serif;
+    margin-bottom: 16px;
+    color: #246240;
+}
+
+p {
+    font-weight: 500;
+    text-indent: 2em;
+    margin: 16px auto;
+}
+
+a.main {
+    text-decoration: none;
+    font-weight: bold;
+    color: #246240;
+}
+
+a.main:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: "Android", sans-serif;
+    color: #246240;
+    padding: 0px 10px;
+    margin: 16px auto;
+    background: linear-gradient(90deg, rgba(202, 237, 217, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+div.image {
+    text-align: center;
+}
+
+div.video {
+    text-align: center;
+    background-color: #1A5C38;
+    padding: 30px;
+    margin: auto -20px;
+    /* Usei o margin para criar um espaçamento negativo e estender o fundo para encostar na main (cancelando o padding da main apenas nessa div)*/
+}
+
+img {
+    max-width: 100%;
+    /* Define a largura máxima da imagem como 100% do contêiner, ou seja, a imagem se adaptará à largura do contêiner */
+    height: auto;
+    /* Mantém a proporção da imagem, ou seja, a altura será ajustada automaticamente (não fica distorcida) */
+}
+
+iframe {
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+    /* Altura fixa para o iframe */
+}
+
+/* Estilos para a section */
+section {
+    background-color: #C5EBD6;
+    margin-top: 12px;
+    padding: 0px 0px 10px 10px;
+    border-radius: 8px;
+}
+
+header.section-header {
+    background-color: #2FA866;
+    margin-left: -10px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+header.section-header h1 {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: none;
+    margin: auto;
+    padding-top: 0px;
+}
+
+article {
+    display: inline-block;
+    width: 45%;
+    /* Usei width para definir a largura dos artigos  e dar espaço entre eles. A porcentagem serve para manter a responsividade */
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #1A5C38;
+    margin: 25px auto auto;
+    padding: 10px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    margin: auto;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* 
+            
+            Medidas Absolutas: cm, mm, in, px, pt, pc
+            
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente = 1 em
+            Se usarmos 1em, provavelmente o tamanho da fonte não irá mudar, mas se usarmos 2em, o tamanho da fonte irá aumentar 2x.
+            */
+            font-size: 1.5em;
+            font-weight: bold; 
+            /* 100, 200, 300, 400, 500, 600, 700, 800, 900 
+            
+            leighter, normal, bold, bolder.
+            
+            */
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            
+            /* shorthand for font properties 
+            
+            font-family: "Work Sans", serif;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: italic;
+
+            Ordem correta da shorthand:
+            font-style -> font-weight -> font-size -> font-family
+            */
+
+            font: italic bold 3em "Work Sans", serif;
+        }
+
+        h2 {
+            font: bold 2em "Work Sans", serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes em CSS</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusantium porro provident odio eius minima rerum aliquam. Maiores omnis eligendi, pariatur animi iusto doloremque magnam reprehenderit, sapiente reiciendis error cum!
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet recusandae nihil, veritatis quisquam illum, qui fuga sunt incidunt, odit culpa aperiam non. Fuga reiciendis magni facilis similique neque voluptas tempora?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim laborum molestiae excepturi nihil, necessitatibus ad ipsum veniam eaque tempora sint, consectetur, nulla provident aliquam facere beatae adipisci earum modi! 
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti corporis quasi facere ut? Consequatur nemo dolorum rem neque, atque sapiente laboriosam, ducimus unde fugiat temporibus modi iste nostrum officiis deserunt?
+    </p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nesciunt, eum velit sequi animi incidunt harum dolorum odit rem consequatur! Eos commodi veritatis similique illo inventore aperiam? Quisquam, neque dolor!
+    </p>
+
+</body>
+</html>
