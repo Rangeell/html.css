@@ -33,17 +33,17 @@ header h1:hover {
 }
 
 header p {
-    font: 500 1.2em "verdana", sans-serif;
+    font: 500 1em "verdana", sans-serif;
     padding-bottom: 50px;
 }
 
-header a {
+a {
     font: 800 1em "verdana", sans-serif;
     text-decoration: none;
     color: white;
 }
 
-header a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -55,12 +55,50 @@ section {
     line-height: 2em;
 }
 
+section p {
+    padding-bottom: 50px;
+}
+
 section.padrao {
     background-color: white;
     color: black;
 }
 
 section#imagem {
-    background: url("../images/background001.jpg") no-repeat fixed center/cover;
+    background: white url("../images/background001.jpg") no-repeat fixed right center/cover;
+}
+
+section#imagem2 {
+    background: url("../images/background002.jpg") no-repeat fixed left bottom/cover
+}
+
+section#imagem p,
+#imagem2 p {
+    background-color: #00000082;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
     color: white;
+    padding: 1.2vw;
+    width: 41.5vw;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+nav p {
+    color: white;
+    font: 500 1em var(--fontnav);
+}
+
+nav a {
+    display: inline-block;
+    transition: 0.5s, color 0.5s ease;
+}
+
+nav a:hover {
+    transform: scale(1.08);
+    margin: 0 5px;
+    color: #aaaa;
 }
