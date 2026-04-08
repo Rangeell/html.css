@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonth: "Passion One", "cursive";
+    --fontp: "sriracha", sans-serif;
+    --fontnav: "verdana", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configurations inside header */
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font: bold 10vw var(--fonth);
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header h1:hover {
+    text-decoration: underline;
+}
+
+header p {
+    font: 500 1.2em "verdana", sans-serif;
+    padding-bottom: 50px;
+}
+
+header a {
+    font: 800 1em "verdana", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Section configurations */
+
+section {
+    font: 500 3.5vw var(--fontp);
+    padding: 10vh 30px;
+    line-height: 2em;
+}
+
+section.padrao {
+    background-color: white;
+    color: black;
+}
+
+section#imagem {
+    background: url("../images/background001.jpg") no-repeat fixed center/cover;
+    color: white;
+}
