@@ -1,21 +1,29 @@
 @charset "UTF-8";
 
-/* Importação de fontes */
+/* fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Variables */
 :root {
-    --fonth: "Passion One", "cursive";
-    --fontp: "sriracha", sans-serif;
-    --fontnav: "verdana", sans-serif;
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", sans-serif;
+    --font3: "Sriracha", cursive;
 }
 
+/* Global configurations */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Configurations inside header */
+/* HTML and body configurations */
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
 
+/* header configurations */
 header {
     background-color: black;
     color: white;
@@ -23,7 +31,7 @@ header {
 }
 
 header h1 {
-    font: bold 10vw var(--fonth);
+    font: bold 10vw var(--font2);
     font-variant: small-caps;
     padding-top: 50px;
 }
@@ -33,12 +41,12 @@ header h1:hover {
 }
 
 header p {
-    font: 500 1em "verdana", sans-serif;
+    font: 500 1em;
     padding-bottom: 50px;
 }
 
-a {
-    font: 800 1em "verdana", sans-serif;
+ a {
+    font-weight: 800;
     text-decoration: none;
     color: white;
 }
@@ -47,15 +55,15 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Section configurations */
+/* section configurations */
 section {
-    font: 500 3.5vw var(--fontp);
+    font: 500 3.5vw var(--font3);
     padding: 10vh 30px;
     line-height: 2em;
 }
 
 section p {
-    padding-bottom: 50px;
+    padding-bottom: 2em;
 }
 
 section.padrao {
@@ -63,35 +71,35 @@ section.padrao {
     color: black;
 }
 
-section#imagem {
+section.imagem {
+    background-color: rgb(38, 38, 38);
+    color: white;
+    box-shadow: inset 6px 6px 13px 1px #00000092;
+}
+
+section#imagem01 {
     background: white url("../images/background001.jpg") no-repeat fixed right center/cover;
 }
 
-section#imagem2 {
-    background: url("../images/background002.jpg") no-repeat fixed left bottom/cover
+section#imagem02 {
+    background: url("../images/background002.jpg") no-repeat fixed left bottom/cover;
 }
 
-section#imagem p,
-#imagem2 p {
+section.imagem p{
     background-color: #00000082;
     text-shadow: 1px 1px 0px rgb(0, 0, 0);
-    color: white;
-    padding: 1.2vw;
-    width: 41.5vw;
+    padding: 5px;
+    display: inline-block;
 }
 
 /* nav configurations */
 nav {
     background-color: black;
+    color: white;
+    font: 500 1em;
     text-align: center;
     padding: 10px;
 }
-
-nav p {
-    color: white;
-    font: 500 1em var(--fontnav);
-}
-
 nav a {
     display: inline-block;
     transition: 0.5s, color 0.5s ease;
