@@ -48,7 +48,6 @@ a:hover {
 }
 
 /* Section configurations */
-
 section {
     font: 500 3.5vw var(--fontp);
     padding: 10vh 30px;
@@ -81,6 +80,7 @@ section#imagem p,
     width: 41.5vw;
 }
 
+/* nav configurations */
 nav {
     background-color: black;
     text-align: center;
