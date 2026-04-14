@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+
+    <style>
+        /* Body configurations */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Caption configurarions */
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        /* Table configuration */
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            width: 400px;
+        }
+
+        /* Configurações dos cabeçalhos */
+        .cabeçalho {
+            background-color: rgb(123, 121, 121);
+            color: white;
+        }
+
+        .mediaTotal {
+            background-color: rgb(123, 121, 121);
+            color: white;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        .dadoTotal {
+            background-color: rgb(123, 121, 121);
+            color: white;
+        }
+
+        tr,
+        td,
+        th {
+            border: 2px solid black;
+            padding: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Desafio 13</h1>
+
+    <table>
+        <caption>Desafio final</caption>
+
+        <!-- Table head configuration -->
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2" class="cabeçalho">Área</th>
+                <th scope="col" rowspan="2" class="cabeçalho">Disciplinas</th>
+                <th scope="colgroup" colspan="2" class="cabeçalho">Notas</th>
+                <th scope="col" rowspan="2" class="cabeçalho">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="cabeçalho">nota 1</th>
+                <th scope="col" class="cabeçalho">nota 2</th>
+            </tr>
+        </thead>
+
+        <!-- Table body configuration -->
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="mediaTotal">Média de Exatas</th>
+                <td class="dadoTotal">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="mediaTotal">Média de Humanas</th>
+                <td class="dadoTotal">0.0</td>
+            </tr>
+        </tbody>
+
+        <!-- Table footer configuration  -->
+
+
+
+    </table>
+</body>
+
+</html>
