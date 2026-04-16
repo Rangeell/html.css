@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body/HTML configurations */
+body,
+html {
+    height: 100vh;
+}
+
+/* Background image */
+body {
+    background: url(../images/fundo-madeira.jpg) no-repeat fixed center/cover;
+}
+
+/* Iphone image */
+.iphone {
+    display: block;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* dashboard */
+.dashboard {
+   text-align: center;
+   width: 80px;
+   position: absolute;
+   top: 3%;
+   right: 1%;
+}
+
+/* icons */
+.icons {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/* links */
+a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 18px;
+
+}
