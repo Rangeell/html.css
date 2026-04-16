@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdos</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        div {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        iframe {
+            border-radius: 5px;
+            aspect-ratio: 16 / 9;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mapa {
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Conteúdos dentro de iframes</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio obcaecati amet accusantium, eos, ad nulla neque non sequi quaerat qui necessitatibus dignissimos. Reiciendis saepe dolor alias deserunt optio voluptatum dolorum!
+    </p>
+    <h2>Vídeos</h2>
+    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/r0McrrrFNtA?si=il0IV39j-P9zJ8Mc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+    <h2>Mapas do Google</h2>
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.296175838645!2d-43.177170990266525!3d-22.90244413762713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d85272f76f7!2sHostnet%20Internet!5e0!3m2!1spt-BR!2sbr!4v1776335810440!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>Mapas do Waze</h2>
+    <iframe class="mapa" src="https://embed.waze.com/iframe?zoom=16&lat=-22.902449&lon=-43.174591&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+
+    <h2>Google Docs</h2>
+    <iframe class="mapa" src="https://docs.google.com/presentation/d/e/2PACX-1vSk-Eq8mheB11IZV8gM7_dKsxfeZbdC1Hy3u4wDkDxnGRDb9-JiZe9Q0OnHTboTF04mZd3xzKTkNnAA/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</body>
+
+</html>
