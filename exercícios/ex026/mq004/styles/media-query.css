@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints 
+------------------------------
+Pequens telas: até 600px;
+Celular: até 600px até 768px;
+Tablet: 768px até 992px;
+Desktop: 992px até 1.200px;
+Grandes telas: acima de 1.200px
+*/
+
+/* Impressão */
+@media print {
+    
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url('../images/back-print.jpg');
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: "Essa impressão feita através de um projeto de Breno Rangel github.com/Rangeell";
+        text-decoration: underline;
+    }
+
+    
+
+    h2::after {
+        content: "Versão para impressão";
+    }
+
+    #phone {display: none;}
+    #print {display: block;}
+
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url('../images/back-tablet.jpg');
+    }
+
+    h2::after {
+        content: "Versão para tablets";
+    }
+
+    #phone {display: none;}
+    #tablet{display: block;}
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url('../images/back-pc.jpg');
+    }
+
+    h2::after {
+        content: "Versão para desktops";
+    }
+
+    #phone {display: none;}
+    #pc {display: block;}
+}
+
+/*  Grandes telas */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url('../images/back-tv.jpg');
+    }
+
+    h2::after {
+        content: "Versão para grandes telas";
+    }
+
+    #phone {display: none;}
+    #tv {display: block;}
+}
