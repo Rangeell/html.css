@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,1,0&icon_names=person" />
     <link rel="shortcut icon" href="images/pagina-de-login.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles/login.css" media="all">
-    <link rel="stylesheet" href="style/media-query.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/media-query.css">
 
 </head>
+
 <body>
     <main>
         <div class="back">
-            
+
         </div>
 
         <!-- Login section -->
         <div class="login">
             <h1>Login</h1>
             <p>
-                Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+                Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu
+                ambiente.
             </p>
 
             <!-- Form section -->
-            <form action="login.php" method="get">
-                
+            <form action="login.php" method="get" autocomplete="on">
+
                 <!-- E-mail section -->
-                <div class="email">
-                    <label for="iemail"></label>
-                    <input type="email" name="email" id="iemail">
+                <div class="boxLogin">
+                    <label for="iemail"><span class="material-symbols-outlined">person</span></label>
+                    <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email">
                 </div>
             </form>
         </div>
     </main>
 </body>
+
 </html>
