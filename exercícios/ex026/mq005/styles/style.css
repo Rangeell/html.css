@@ -84,6 +84,7 @@ nav > ul > li > a:active {
 /* main configurations */
 main {
     width: 90vw;
+    max-width: 800px;
     background-color: white;
     margin: auto;
     margin-top: 10px;
