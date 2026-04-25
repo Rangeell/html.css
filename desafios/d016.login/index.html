@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,1,0&icon_names=person" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="images/pagina-de-login.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/media-query.css">
@@ -32,14 +32,19 @@
 
                 <!-- E-mail section -->
                 <div class="boxLogin">
-                    <label for="iemail"><span class="material-symbols-outlined">person</span></label>
-                    <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email">
+                    <label for="iemail"><span id="person-icon" class="material-symbols-outlined">person</span></label>
+                    <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required>
                 </div>
 
+                <!-- Password section -->
                 <div class="boxLogin">
-                    <label for="isenha"></label>
-                    <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8">
+                    <label for="isenha"><span id="key-icon" class="material-symbols-outlined">vpn_key</span></label>
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" minlength="8" required>
                 </div>
+
+                <!-- Send buttom -->
+                 <input type="submit" value="Entrar">
+                 <a href="#">Esqueci a senha <span id="email-icon" class="material-symbols-outlined">mail</span></a>
             </form>
         </div>
     </main>
