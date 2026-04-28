@@ -1,0 +1,30 @@
+@charset "UTF 8";
+
+@media screen and (min-width: 782px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    header h1 {
+        text-align: start;
+        
+        flex: 0 1 50%;
+    }
+
+    nav {
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
+
+        flex: 0 0 auto;
+    }
+
+    nav>a {
+        margin: 0px 5px 0px 0px;
+
+        flex: 0 0 80px;
+    }
+}

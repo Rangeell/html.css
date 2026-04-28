@@ -1,0 +1,82 @@
+@charset "UTF 8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+/* HEADER SECTION */
+
+header {
+    background-color: rgb(92, 90, 90);
+    padding: 10px;
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 1px rgba(50, 49, 49, 0.625);
+}
+
+/* Nav configurations */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+nav>a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    flex: 0 1 90%;
+    transition: background-color 0.45s ease-in-out;
+}
+
+a:hover, a:focus {
+    background-color: white;
+    color: black;
+}
+
+a:active {
+    transform: scale(95%);
+    transition: transform 0.01s ease;
+}
+
+
+/* MAIN SECTION */
+main {
+    width: 90vw;
+    max-width: 800px;
+    margin: 5px auto 0px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+main h1 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+main p {
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
