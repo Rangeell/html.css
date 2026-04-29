@@ -3,9 +3,9 @@
 @media screen and (min-width: 782px) {
     header {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        flex-flow: row wrap;
     }
 
     header h1 {
