@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;   
+    grid-template: repeat(3, 100px)/repeat(4, 1fr);
+    place-items: stretch;
+    place-content: stretch;
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: rgb(255, 0, 0);
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.caixa2 {
+    background-color: greenyellow;
+
+    grid-row-start: 2;
+    grid-row-end: -1;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.caixa3 {
+    background-color: aqua;
+
+    grid-row-start: 2;
+    grid-row-end: -1;
+
+    grid-column-start: 3;
+    grid-column-end: -1;
+
+}
