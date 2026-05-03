@@ -12,10 +12,15 @@
 body {
     width: 100%;
     height: 100dvh;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
     display: grid;
-    grid-template: 2fr .8fr 8fr .8fr/ 3fr .8fr;
+    grid-template: 2fr .8fr 8fr .8fr/ 2fr 0.4fr;
     place-items: stretch;
-    place-content: stretch ;
+    place-content: stretch;
 }
 
 /* HEADER AREA */
@@ -24,7 +29,7 @@ header {
     grid-area: 1/1 / 2/-1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 /* nav area */
@@ -32,15 +37,14 @@ nav {
     background-color: lightcoral;
     grid-area: 2/1 / 3/-1;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: end;
-    padding: 5px;
 }
 
 /* MAIN AREA */
 main {
     background-color: lightgreen;
-    grid-area: 3/1 / 4/3;
+    grid-area: 3/1 / -2/-2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +53,7 @@ main {
 /* aside area */
 aside {
     background-color: lightyellow;
-    grid-area: 3/2 / 4/-1;
+    grid-area: 3/-2 / -2/-1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,9 +62,8 @@ aside {
 /* FOOTER AREA */
 footer {
     background-color: darkgray;
-    grid-area: 4/1 / -1/-1;
+    grid-area: -2/1 / -1/-1;
     display: flex;
     justify-content: start;
     align-items: end;
 }
-
